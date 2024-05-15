@@ -16,4 +16,4 @@ export function config(options?: ConfigOptions): void;
  * @param url - The URL of the RabbitMQ server.
  * @returns A promise that resolves to a RabbitMQ channel.
  */
-export function connectToRabbitMQ(url: string): Promise<Channel>;
+export function connectToRabbitMQ(url: string | undefined): Promise<Channel>;
